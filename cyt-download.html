@@ -1,0 +1,197 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd"><html><head>
+  <title>Dana Pe'er Lab </title>
+<script type="text/javascript">
+function validate_required(field,alerttxt)
+{
+with (field)
+{
+if (value==null||value=="")
+  {alert(alerttxt);return false;}
+else {return true}
+}
+}
+function validate_email(field,alerttxt)
+{
+with (field)
+{
+apos=value.indexOf("@");
+dotpos=value.lastIndexOf(".");
+if (apos<1||dotpos-apos<2) 
+  {alert(alerttxt);return false;}
+else {return true;}
+}
+}
+
+function validate_form(thisform)
+{
+with (thisform)
+{
+if (validate_email(email,"Please enter a valid e-mail address")==false)
+  {email.focus();return false;}
+if (validate_required(name,"Please enter your name")==false)
+  {email.focus();return false;}
+if (validate_required(institution,"Please enter your affiliation")==false)
+  {email.focus();return false;}
+}
+}
+</script>
+  </head>
+  <body>  
+ <img src="pics/header.jpg" width="980" height="250" border="0">
+
+<table width="700" align="center">
+	 <tbody>
+		
+<TABLE>
+
+<TR valign="top">
+  <TD>
+<TABLE  border="0"  cellpadding="4" cellspacing="4">
+<TR><TD bgcolor="#6699cc" align="center">
+  <a href="index.html"
+  style="text-decoration:none"><b><font color="white" face="Arial" size="3">Home</b></a>
+</td></tr>
+<TR><TD bgcolor="#6699cc" align="center">
+  <a href="pub/index.html"
+  style="text-decoration:none"><b><font color="white" face="Arial" size="3">Publications</b></a>
+</td></tr>
+<TR><TD bgcolor="#6699cc" align="center">
+  <a href="research/index.html" 
+style="text-decoration:none"><b><font color="white" face="Arial" size="3">Research</b></a>
+</td></tr>
+<TR><TD bgcolor="#6699cc" align="center">
+  <a href="people.html" style="text-decoration:none">
+  <b><font color="white" face="Arial" size="3">People</b></a>
+</td></tr>
+<TR><TD bgcolor="#6699cc" align="center">
+  <a href="software.html" style="text-decoration:none">
+  <b><font color="white" face="Arial" size="3">Software</b>
+</td></tr>
+
+<TR><TD bgcolor="#669900" align="left">
+  <a href="biolearn.html" style="text-decoration:none">
+  <b><font color="white" face="Arial" size="3">Biolearn</b></a>
+</td></tr>
+<TR><TD bgcolor="#669900" align="left">
+  <a href="genatomy.html" style="text-decoration:none">
+  <b><font color="white" face="Arial" size="3">Genatomy</b></a>
+</td></tr>
+<TR><TD bgcolor="#669900" align="left">
+  <a href="camelot.html" style="text-decoration:none">
+  <b><font color="white" face="Arial" size="3">Camelot</b></a>
+</td></tr>
+<TR><TD bgcolor="#669900" align="left">
+  <a href="jistic.html" style="text-decoration:none">
+  <b><font color="white" face="Arial" size="3">JISTIC</b></a>
+</td></tr>
+<TR><TD bgcolor="#669900" align="left">
+  <a href="http://litvan.bio.columbia.edu/" style="text-decoration:none">
+  <b><font color="white" face="Arial" size="3">LitVAn</b></a>
+</td></tr>
+<TR><TD bgcolor="#669900" align="left">
+  <a href="conexic.html" style="text-decoration:none">
+  <b><font color="white" face="Arial" size="3">CONEXIC</b></a>
+</td></tr>
+<TR><TD bgcolor="#669900" align="left">
+  <a href="cyt.html" style="text-decoration:none">
+  <b><font color="white" face="Arial" size="3">ViSNE</b></a>
+</td></tr>
+<TR><TD bgcolor="#669900" align="left">
+  <a href="wanderlust.html" style="text-decoration:none">
+  <b><font color="white" face="Arial" size="3">Wanderlust</b></a>
+</td></tr>
+<TR><TD bgcolor="#669900" align="left">
+    <a href="dremi.html" style="text-decoration:none">
+        <b><font color="white" face="Arial" size="3">DREMI</b></a>
+</td></tr>
+<TR><TD bgcolor="#669900" align="left">
+    <a href="helios.html" style="text-decoration:none">
+        <b><font color="white" face="Arial" size="3">HELIOS/ISAR</b></a>
+</td></tr>
+<TR><TD bgcolor="#669900" align="left">
+    <a href="cosper.html" style="text-decoration:none">
+        <b><font color="white" face="Arial" size="3">COSPER</b></a>
+</td></tr>
+<TR><TD bgcolor="#669900" align="left">
+    <a href="phenograph.html" style="text-decoration:none">
+        <b><font color="white" face="Arial" size="3">PhenoGraph</b></a>
+</td></tr>
+<TR><TD bgcolor="#6699cc" align="center">
+  <a href="wetlab.html" style="text-decoration:none">
+  <b><font color="white" face="Arial" size="3">Wet Lab</b>
+</td></tr>
+<TR><TD bgcolor="#6699cc" align="center">
+  <a href="openings.html" style="text-decoration:none">
+  <b><font color="white" face="Arial" size="3">Openings</b></a>
+</tr></td>
+<TR><TD bgcolor="#6699cc" align="center">
+  <a href="contact.html" style="text-decoration:none">
+  <b><font color="white" face="Arial" size="3">Contact</b></a>
+</tr></td>
+</TABLE>
+
+<TD width=700>
+<table>
+<tr>
+<td><H1>CYT Download Page</H1> <br><H2> ViSNE, Wanderlust, PhenoGraph, Wishbone</H2></td>
+</tr>
+<tr><td><br>
+CYT is an interactive visualization tool designed for the analysis of high-dimensional mass or flow cytometry data. The tool encompasses multiple computational features (viSNE, Wanderlust, PhenoGraph and more). 
+</td></tr>
+<tr><td><br>
+viSNE: computing and visualizing viSNE maps from user selected features. Information can be interactively overlaid onto the generated map by coloring cells according to various parameters, such as marker expression, source of sample or subtype. cyt includes a gating feature that can be used with either biaxial plots (to generate a viSNE map on only a defined subset of the cells) or the viSNE map (to further study a population identified by viSNE). This is enabled by cyt's modular design: once a gate is created it can be treated as an independent dataset and all of cyt's features can be applied. The gates can be compared on a marker-by-marker basis using one-dimensional density plots, and cyt prioritizes the markers according to the L1 distance between marker distributions. This method quickly identifies key differences between populations. The combination of viSNE and cyt facilitates efficient examination of mass and flow cytometry data.
+</td></tr>
+<tr><td><br>
+The viSNE function in cyt uses the Barnes-Hut implementation of t-SNE by Laurens van der Maaten from Delft University of Technology (<a href=http://homepage.tudelft.nl/19j49/t-SNE.html target=_blank>http://homepage.tudelft.nl/19j49/t-SNE.html</a>). This implementation is significantly faster than all other implementations so far and better scales to hundreds of thousands of cells and therefore improves both speed and performance.</td></tr>
+<tr><td><br>
+PhenoGraph: computing PhenoGraph clusters. The clusters can be visualized by a marker expression heatmap or the cluster centroids can be used to generate a tSNE map to be gated on or overlaid with other markers.
+</td></tr>
+<tr><td><br>
+Wanderlust: computing a wanderlust trajectory (a nonlinear pricipal component or ordering of the data). Cyt can visualize the average expression of markers as a function of the wanderlust trajectory (or any desired marker).
+</td></tr>
+<tr><td><br>
+Wishbone: to align single cells from differentiation systems with bifurcating branches.
+</td></tr>
+<tr><td><br>
+cyt also implements some basic data analysis techniques such as PCA, kMeans, EMGM, and more. 
+</td></tr>
+<tr><td><br>
+
+You can find detailed usage instructions <a href="CYT/cyTutorial.ppt" target="_blank">here</a> and an expanded usage instructions ppt for phenograph features  <a href="CYT/Meta_Clustering.pptx" target="_blank">here</a>.
+</tr></td>
+<tr><td><br>
+It is freely distributed for academic use but registration is required.<br>Please take a moment to fill out this form:<br></td></tr>
+</table>
+<table>
+<FORM ACTION="http://www.c2b2.columbia.edu/danapeerlab/cgi-bin/cyt_registration.pl" onsubmit="return validate_form(this)"
+ METHOD="POST">
+<TR>
+<TD ALIGN="right"><STRONG>Name:</STRONG></TD>
+<TD><INPUT type="text" name="name" SIZE=30></TD>
+</TR>
+
+<TR>
+<TD ALIGN="right"><STRONG>Position:</STRONG></TD>
+<TD><INPUT NAME="position" SIZE=30></TD>
+</TR>
+
+
+<TR>
+<TD ALIGN="right"><STRONG>Institute:</STRONG></TD>
+<TD><INPUT type="text" name="institute" SIZE=30></TD>
+</TR>
+
+<TR>
+<TD ALIGN="right"><STRONG>Email:</STRONG></TD>
+<TD><INPUT type="text" name="email" size=30></TD>
+</TR>
+<TR><TD>
+<input type="submit" name="Submit" value="Register">
+</TD></TR>
+</FORM>
+
+</table>
+</TD>
+
+</body></html>
+

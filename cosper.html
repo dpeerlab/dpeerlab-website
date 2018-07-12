@@ -1,0 +1,172 @@
+<html>
+<head>
+  <title>Dana Pe'er Lab </title>
+<script type="text/javascript">
+function validate_required(field,alerttxt)
+{
+with (field)
+{
+if (value==null||value=="")
+  {alert(alerttxt);return false;}
+else {return true}
+}
+}
+function validate_email(field,alerttxt)
+{
+with (field)
+{
+apos=value.indexOf("@");
+dotpos=value.lastIndexOf(".");
+if (apos<1||dotpos-apos<2) 
+  {alert(alerttxt);return false;}
+else {return true;}
+}
+}
+
+function validate_form(thisform)
+{
+with (thisform)
+{
+if (validate_email(email,"Please enter a valid e-mail address")==false)
+  {email.focus();return false;}
+if (validate_required(name,"Please enter your name")==false)
+  {email.focus();return false;}
+if (validate_required(institution,"Please enter your affiliation")==false)
+  {email.focus();return false;}
+}
+}
+</script>
+ </head>
+ 
+ <body>  
+ <img src="pics/header.jpg" width="980" height="250" border="0">
+
+<table width="700" align="center">
+	 <tbody>
+		
+<TABLE>
+
+<TR valign="top">
+  <TD>
+<TABLE  border="0"  cellpadding="4" cellspacing="4">
+
+<TR><TD bgcolor="#6699cc" align="center">
+  <a href="index.html"
+  style="text-decoration:none"><b><font color="white" face="Arial" size="3">Home</b></a>
+</td></tr>
+
+<TR><TD bgcolor="#6699cc" align="center">
+  <a href="pub/index.html"
+  style="text-decoration:none"><b><font color="white" face="Arial" size="3">Publications</b></a>
+</td></tr>
+
+<TR><TD bgcolor="#6699cc" align="center">
+  <a href="research/index.html" 
+style="text-decoration:none"><b><font color="white" face="Arial" size="3">Research</b></a>
+</td></tr>
+
+<TR><TD bgcolor="#6699cc" align="center">
+  <a href="people.html" style="text-decoration:none">
+  <b><font color="white" face="Arial" size="3">People</b></a>
+</td></tr>
+
+<TR><TD bgcolor="#6699cc" align="center">
+  <a href="software.html" style="text-decoration:none">
+  <b><font color="white" face="Arial" size="3">Software</b>
+</td></tr>
+
+<TR><TD bgcolor="#669900" align="left">
+  <a href="biolearn.html" style="text-decoration:none">
+  <b><font color="white" face="Arial" size="3">Biolearn</b></a>
+</td></tr>
+
+<TR><TD bgcolor="#669900" align="left">
+  <a href="genatomy.html" style="text-decoration:none">
+  <b><font color="white" face="Arial" size="3">Genatomy</b></a>
+</td></tr>
+
+<TR><TD bgcolor="#669900" align="left">
+  <a href="camelot.html" style="text-decoration:none">
+  <b><font color="white" face="Arial" size="3">Camelot</b></a>
+</td></tr>
+
+<TR><TD bgcolor="#669900" align="left">
+  <a href="jistic.html" style="text-decoration:none">
+  <b><font color="white" face="Arial" size="3">JISTIC</b></a>
+</td></tr>
+
+<TR><TD bgcolor="#669900" align="left">
+  <a href="http://litvan.bio.columbia.edu/" style="text-decoration:none">
+  <b><font color="white" face="Arial" size="3">LitVAn</b></a>
+</td></tr>
+
+<TR><TD bgcolor="#669900" align="left">
+  <a href="conexic.html" style="text-decoration:none">
+  <b><font color="white" face="Arial" size="3">CONEXIC</b></a>
+</td></tr>
+
+<TR><TD bgcolor="#669900" align="left">
+  <a href="cyt.html" style="text-decoration:none">
+  <b><font color="white" face="Arial" size="3">ViSNE</b></a>
+</td></tr>
+
+<TR><TD bgcolor="#669900" align="left">
+  <a href="wanderlust.html" style="text-decoration:none">
+  <b><font color="white" face="Arial" size="3">Wanderlust</b></a>
+</td></tr>
+
+<TR><TD bgcolor="#669900" align="left">
+	<a href="dremi.html" style="text-decoration:none">
+  <b><font color="white" face="Arial" size="3">DREMI</b></a>
+</td></tr>
+<TR><TD bgcolor="#669900" align="left">
+	<a href="helios.html" style="text-decoration:none">
+        <b><font color="white" face="Arial" size="3">HELIOS/ISAR</b></a>
+</td></tr>
+<TR><TD bgcolor="#669900" align="left">
+	<a href="cosper.html" style="text-decoration:none">
+        <b><font color="white" face="Arial" size="3">COSPER</b></a>
+</td></tr>
+<TR><TD bgcolor="#669900" align="left">
+	<a href="phenograph.html" style="text-decoration:none">
+        <b><font color="white" face="Arial" size="3">PhenoGraph</b></a>
+</td></tr>
+<TR><TD bgcolor="#669900" align="left">
+	<a href="wishbone.html" style="text-decoration:none">
+        <b><font color="white" face="Arial" size="3">Wishbone</b></a>
+</td></tr>
+<TR><TD bgcolor="#6699cc" align="center">
+  <a href="wetlab.html" style="text-decoration:none">
+  <b><font color="white" face="Arial" size="3">Wet Lab</b>
+</td></tr>
+
+<TR><TD bgcolor="#6699cc" align="center">
+  <a href="openings.html" style="text-decoration:none">
+  <b><font color="white" face="Arial" size="3">Openings</b></a>
+</tr></td>
+
+<TR><TD bgcolor="#6699cc" align="center">
+  <a href="contact.html" style="text-decoration:none">
+  <b><font color="white" face="Arial" size="3">Contact</b></a>
+</tr></td>
+
+</TABLE>
+
+<TD width=700>
+<table>
+<tr> <td><H1>COSPER</H1></td></tr>
+ <tr><td><!-- <a href="dremi/dremi_figure.png" target="_blank"><img src="dremi/dremi_figure.png" align="right" hspace="5" height=200 width=300></a> -->
+        COSPER is a tool that uses pre- and post-perturbation gene expression data to identify context-specific coregulated clusters of genes.
+ 
+ </td>
+<br>
+<tr><td><br> If you use this software for your publication, please cite the following article: <br><br>
+	Litvin et. al. 2015.
+</td></tr>
+<tr><td><br><br>
+	<!-- You can download the data included in the paper <a href="dremi-data.html">here</a>. -->
+<br> You can download the matlab-based tool COSPER <a href="cosper-download.html">here</a>. Instructions are provided in the README.txt file. </td></tr>
+</table> 
+</TD>
+</body>
+</html>
